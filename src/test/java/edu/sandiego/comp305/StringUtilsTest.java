@@ -36,8 +36,8 @@ public final class StringUtilsTest {
      */
     @Test
     public void testReverseStringWithSpaces() {
-        assertEquals("snoipmahC eugaeL",
-                StringUtils.reverseString("hello world"));
+        assertEquals("eugaeL snoipmahC",
+                StringUtils.reverseString("Champions League"));
     }
 }
 

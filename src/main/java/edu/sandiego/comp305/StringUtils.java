@@ -14,6 +14,14 @@ public final class StringUtils {
      * @return the reversed string
      */
     public static String reverseString(final String str) {
-        return null;
+        if (str == null || str.isEmpty()) {
+            return str;
+        }
+
+        final StringBuilder reversed = new StringBuilder();
+        for (int i = str.length() -1; i >= 0; i--) {
+            reversed.append(str.charAt(i));
+        }
+        return reversed.toString();
     }
 }
